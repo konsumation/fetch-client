@@ -1,3 +1,4 @@
+types
 *.node
 /node_modules/**
 bun.lockb
