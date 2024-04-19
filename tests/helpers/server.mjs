@@ -52,8 +52,8 @@ export async function createConfig(t, port = 3150, users = defaultUsers) {
     },
     auth: {
       jwt: {
-        public: readFileSync(pn("../../config/demo.rsa.pub")),
-        private: readFileSync(pn("../../config/demo.rsa")),
+        public: readFileSync(pn("./demo.rsa.pub")),
+        private: readFileSync(pn("./demo.rsa")),
         options: {
           algorithm: "RS256"
         }
