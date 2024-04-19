@@ -1,0 +1,46 @@
+name: CI
+jobs:
+  test-node:
+    runs-on: ubuntu-latest
+  release:
+    needs:
+      - test-node
+      - test-browser
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4.1.2
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.12.2
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          CI: "true"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  test-browser:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser:
+          - chrome
+          - firefox
+    steps:
+      - uses: actions/checkout@v4.1.2
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.12.2
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npx playwright install
+      - run: npm run test:browser-ava --if-present
+        env:
+          BROWSER: ${{ matrix.browser }}
