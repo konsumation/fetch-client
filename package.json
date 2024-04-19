@@ -2,11 +2,14 @@
   "name": "fetch-client",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
+  "types": "./types/master.d.mts",
   "exports": {
     ".": {
-      "default": "{{main}}"
+      "default": "./src/master.mjs",
+      "types": "./types/master.d.mts"
     }
   },
   "description": "fetch client for the konsum model",
@@ -55,5 +58,8 @@
       "arlac77/template-vscode",
       "konsumation/template"
     ]
+  },
+  "dependencies": {
+    "@konsumation/model": "^5.4.0"
   }
 }
