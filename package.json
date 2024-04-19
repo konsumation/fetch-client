@@ -1,0 +1,35 @@
+{
+  "name": "fetch-client",
+  "version": "0.0.0-semantic-release",
+  "description": "fetch client for the konsum model",
+  "scripts": {
+    "test": "npm run test:browser-ava && npm run test:ava",
+    "test:browser-ava": "--overwrite-- browser-ava --headless --no-keep-open tests/*-ava.mjs tests/*-ava-browser.mjs",
+    "cover": "--overwrite-- c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "test:ava": "--overwrite-- ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs",
+    "docs": "documentation readme --section=API ./src/**/*.mjs",
+    "lint": "npm run lint:docs",
+    "lint:docs": "documentation lint ./src/**/*.mjs"
+  },
+  "devDependencies": {
+    "browser-ava": "^2.2.8",
+    "c8": "^9.1.0",
+    "ava": "^6.1.2",
+    "documentation": "^14.0.3",
+    "semantic-release": "^23.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumation/fetch-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/konsumation/fetch-client/issues"
+  },
+  "homepage": "https://github.com/konsumation/fetch-client#readme",
+  "template": {
+    "inheritFrom": [
+      "arlac77/template-browser-ava",
+      "arlac77/template-javascript-component"
+    ]
+  }
+}
