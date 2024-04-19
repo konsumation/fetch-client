@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/fetch-client.svg)](https://www.npmjs.com/package/fetch-client)
-[![Typed with TypeScript](https://flat.badgen.net/badge/icon/Typed?icon=typescript\&label\&labelColor=blue\&color=555555)](https://typescriptlang.org)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![Typed with TypeScript](https://flat.badgen.net/badge/icon/Typed?icon=typescript\&label\&labelColor=blue\&color=555555)](https://typescriptlang.org)
 [![bundlejs](https://deno.bundlejs.com/?q=fetch-client\&badge=detailed)](https://bundlejs.com/?q=fetch-client)
 [![downloads](http://img.shields.io/npm/dm/fetch-client.svg?style=flat-square)](https://npmjs.org/package/fetch-client)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fkonsumation%2Ffetch-client%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/konsumation/fetch-client/goto)
