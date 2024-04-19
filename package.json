@@ -1,5 +1,5 @@
 {
-  "name": "fetch-client",
+  "name": "@konsumption/fetch-client",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public",
