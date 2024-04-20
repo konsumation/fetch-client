@@ -1,11 +1,24 @@
 import test from "ava";
+import { fileURLToPath } from "node:url";
 import { startServer, stopServer } from "./helpers/server.mjs";
-import { Master} from "@konsumation/model";
+import { Master } from "@konsumation/model";
 import { sync } from "@konsumption/fetch-client";
 
-let port = 3151;
+let port = 3155;
 
-test.beforeEach(t => startServer(t, port++));
+test.beforeEach(t =>
+  startServer(
+    t,
+    port++,
+    undefined,
+    fileURLToPath(
+      new URL(
+        "../node_modules/@konsumation/db-test/src/fixtures/database-version-3.txt",
+        import.meta.url
+      )
+    )
+  )
+);
 test.afterEach.always(t => stopServer(t));
 
 test("sync categories", async t => {
@@ -17,8 +30,5 @@ test("sync categories", async t => {
 
   await sync(master, t.context.url, options);
 
- // const response = await fetch(`${t.context.url}/category`, );
-
-
- // t.is(response.status, 200);
+  // t.is(response.status, 200);
 });
