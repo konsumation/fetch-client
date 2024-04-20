@@ -1,7 +1,7 @@
 import test from "ava";
 import { fileURLToPath } from "node:url";
 import { startServer, stopServer } from "./helpers/server.mjs";
-import { Master } from "@konsumation/model";
+import Master from "@konsumation/db-level";
 import { sync } from "@konsumption/fetch-client";
 
 let port = 3155;
@@ -22,7 +22,7 @@ test.beforeEach(t =>
 test.afterEach.always(t => stopServer(t));
 
 test("sync categories", async t => {
-  const master = await Master.initialize({});
+  const master = await Master.initialize(t.context.databaseFile + 'client');
 
   const options = {
     headers: { Authorization: `Bearer ${t.context.token}` }
@@ -30,5 +30,12 @@ test("sync categories", async t => {
 
   await sync(master, t.context.url, options);
 
-  // t.is(response.status, 200);
+  const lines = [];
+
+  for await (const line of master.text(master.context)) {
+    lines.push(line);
+ //   console.log(line);
+  }
+
+   t.true(lines.length > 30);
 });
