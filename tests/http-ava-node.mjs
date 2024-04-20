@@ -2,7 +2,7 @@ import test from "ava";
 import { fileURLToPath } from "node:url";
 import { startServer, stopServer } from "./helpers/server.mjs";
 import Master from "@konsumation/db-level";
-import { sync } from "@konsumption/fetch-client";
+import { sync } from "@konsumation/fetch-client";
 
 let port = 3155;
 
