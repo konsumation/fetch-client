@@ -38,7 +38,7 @@
     "@konsumation/model": "^7.1.0"
   },
   "devDependencies": {
-    "@konsumation/db-test": "^4.2.4",
+    "@konsumation/db-test": "^4.2.5",
     "@konsumation/konsum": "^6.10.6",
     "ava": "^6.1.2",
     "browser-ava": "^2.2.10",
