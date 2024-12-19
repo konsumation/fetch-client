@@ -1,5 +1,4 @@
 [![npm](https://img.shields.io/npm/v/@konsumation/fetch-client.svg)](https://www.npmjs.com/package/@konsumation/fetch-client)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Typed with TypeScript](https://flat.badgen.net/badge/icon/Typed?icon=typescript\&label\&labelColor=blue\&color=555555)](https://typescriptlang.org)
 [![bundlejs](https://deno.bundlejs.com/?q=@konsumation/fetch-client\&badge=detailed)](https://bundlejs.com/?q=@konsumation/fetch-client)
 [![downloads](http://img.shields.io/npm/dm/@konsumation/fetch-client.svg?style=flat-square)](https://npmjs.org/package/@konsumation/fetch-client)
