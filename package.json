@@ -42,10 +42,10 @@
     "@konsumation/db-test": "^4.2.18",
     "@konsumation/konsum": "^6.11.31",
     "ava": "^6.4.1",
-    "browser-ava": "^2.3.37",
+    "browser-ava": "^2.3.39",
     "c8": "^10.1.3",
     "documentation": "^14.0.3",
-    "semantic-release": "^24.2.9",
+    "semantic-release": "^25.0.0",
     "typescript": "^5.9.3"
   },
   "repository": {
