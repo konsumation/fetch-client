@@ -1,5 +1,6 @@
 [![npm](https://img.shields.io/npm/v/@konsumation/fetch-client.svg)](https://www.npmjs.com/package/@konsumation/fetch-client)
 [![Typed with TypeScript](https://flat.badgen.net/badge/icon/Typed?icon=typescript\&label\&labelColor=blue\&color=555555)](https://typescriptlang.org)
+[![License](https://img.shields.io/badge/License-0BSD-blue.svg)](https://spdx.org/licenses/0BSD.html)
 [![bundlejs](https://deno.bundlejs.com/?q=@konsumation/fetch-client\&badge=detailed)](https://bundlejs.com/?q=@konsumation/fetch-client)
 [![downloads](http://img.shields.io/npm/dm/@konsumation/fetch-client.svg?style=flat-square)](https://npmjs.org/package/@konsumation/fetch-client)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fkonsumation%2Ffetch-client%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/konsumation/fetch-client/goto)
