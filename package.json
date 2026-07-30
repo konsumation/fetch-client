@@ -5,7 +5,7 @@
     "access": "public",
     "provenance": true
   },
-  "packageManager": "npm@11.6.3+sha512.4085a763162e0e3acd19a4e9d23ad3aa0978e501ccf947dd7233c12a689ae0bb0190763c4ef12366990056b34eec438903ffed38fde4fbd722a17c2a7407ee92",
+  "packageManager": "npm@11.18.0",
   "types": "./types/master.d.mts",
   "exports": {
     ".": {
@@ -43,7 +43,7 @@
     "@konsumation/db-test": "^4.2.19",
     "@konsumation/konsum": "^6.11.31",
     "ava": "^8.0.1",
-    "browser-ava": "^2.3.69",
+    "browser-ava": "^2.3.70",
     "c8": "^12.0.0",
     "documentation": "^14.0.3",
     "semantic-release": "^25.0.8",
